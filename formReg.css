@@ -1,0 +1,223 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+}
+body {
+  font-family: "Poppins";
+  font-size: 18px;
+  background: linear-gradient(45deg, #8a307f, #79a7d3, #6883bc);
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 65%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 0 5px 1px #6883bc;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.bg-img {
+  width: 100%;
+  background-image: url("images/igor.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex: 1;
+}
+.formContainer {
+  flex: 1;
+  background: linear-gradient(-135deg, #143d59, #f4b41a);
+  text-align: center;
+  color: #fff;
+}
+#form h2 {
+  margin: 10px 0 0px 0;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+.formControl {
+  position: relative;
+  padding: 10px;
+}
+.formControl .field {
+  width: 90%;
+  padding: 10px 15px 10px 35px;
+  outline: none;
+  background: none;
+  border: 1px solid #f4b41a;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.field::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.field::-moz-placeholder {
+  color: #fff;
+}
+
+.field:-ms-input-placeholder {
+  color: #fff;
+}
+
+.field::-ms-input-placeholder {
+  color: #fff;
+}
+
+.field::placeholder {
+  color: #fff;
+}
+/* 
+.formControl label {
+  position: absolute;
+  top: 14px;
+  left: 65px;
+} */
+/* .field:not(:focus) ~ .form_label,
+.field:not(:valid) ~ .form_label {
+  color: #143d59;
+  background-color: #f4b41a;
+} */
+/* .field:focus ~ .form_label,
+.field:not(:placeholder-shown).field:not(:focus) ~ .form_label {
+  font-size: 14px;
+  top: -1px;
+} */
+.formControl i {
+  position: absolute;
+  top: 25px;
+  left: 40px;
+  color: #143d59;
+}
+.formControl .check {
+  position: absolute;
+  top: 16px;
+  left: -160px;
+  margin-bottom: 0px;
+}
+.formControl .check + p {
+  padding-left: 40px;
+  text-align: left;
+  margin-bottom: 0px;
+}
+#btn {
+  width: 90%;
+  padding: 8px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  outline: none;
+  background: #143d59;
+  color: #f4b41a;
+  border: none;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  border-radius: 5px;
+}
+
+@media (max-width: 681px) {
+  .bg-img {
+    display: none;
+  }
+  .formControl .field {
+    width: 90%;
+    padding: 7px 38px;
+    outline: none;
+    background: transparent;
+    border: 1px solid #f4b41a;
+    font-size: 16px;
+    margin-bottom: 3px;
+  }
+  .formControl i {
+    position: absolute;
+    top: 21px;
+    left: 40px;
+    color: #143d59;
+  }
+  #form {
+    position: relative;
+  }
+  /* .formControl .check {
+    position: absolute;
+    top: 16px;
+    right: 0px;
+  } */
+  .formControl .check {
+    position: relative;
+    top: 0;
+    right: -5px;
+    margin: 0;
+  }
+  .formControl .check + p {
+    margin: 0;
+  }
+}
+
+/*
+
+.container {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 0 5px #6883bc;
+}
+.bg-img {
+  width: 100%;
+  background-image: url("igor.jpg");
+  background-position: top center;
+  background-size: cover;
+  flex: 1;
+}
+.formContainer {
+  flex: 1;
+  background: linear-gradient(-135deg, #143d59, #f4b41a);
+  text-align: center;
+  color: #fff;
+}
+#form h2 {
+  margin: 10px;
+}
+.formControl {
+  position: relative;
+  padding: 10px;
+}
+.formControl .field {
+  width: 90%;
+  padding: 10px 15px;
+  outline: none;
+  background: transparent;
+  border: 1px solid #f4b41a;
+}
+.formControl label {
+  position: absolute;
+  top: 14px;
+  left: 55px;
+}
+.formControl i {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  color: #143d59;
+}
+.formControl .check {
+  position: absolute;
+  top: 16px;
+  left: -90px;
+}
+#btn {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+
+*/
